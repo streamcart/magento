@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="castleit_streamcart" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Streamcart Settings</label>
+            <tab>sales</tab>
+            <resource>CastleIt_Streamcart::settings_config</resource>
+            <group id="main_script" translate="label" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Main Script</label>
+                <field id="active" type="select" translate="label" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Active</label>
+                    <validate>validate-digits validate-not-negative-number</validate>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="public_key" type="text" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Public Key</label>
+                    <depends>
+                        <field id="active">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

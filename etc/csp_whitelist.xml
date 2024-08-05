@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="script-src">
+            <values>
+                <value id="script_src_cdn_streamcart_io" type="host">https://cdn.streamcart.io</value>
+                <value id="script_src_service_streamcart_io" type="host">https://service.streamcart.io</value>
+                <value id="script_src_api_streamcart_io" type="host">https://api.streamcart.io</value>
+            </values>
+        </policy>
+        <policy id="connect-src">
+            <values>
+                <value id="connect_src_api_streamcart_io" type="host">https://api.streamcart.io</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>

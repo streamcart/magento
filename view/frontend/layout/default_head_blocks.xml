@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block name="castleit-streamcart-script"
+                   as="castleit-streamcart-script"
+                   template="CastleIt_Streamcart::script.phtml"
+                   ifconfig="castleit_streamcart/main_script/active"
+            >
+                <arguments>
+                    <argument name="main_script" xsi:type="object">CastleIt\Streamcart\ViewModel\MainScript</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

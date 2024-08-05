@@ -1,0 +1,15 @@
+<?php
+    /** @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer */
+    /** @var \Magento\Framework\View\Element\Template $block */
+    /** @var \CastleIt\Streamcart\ViewModel\MainScript $mainScriptViewModel */
+?>
+<?php
+$mainScriptViewModel = $block->getMainScript();
+if($mainScriptViewModel->isMainScriptEnabled()): ?>
+    <script
+        async
+        type="text/javascript"
+        streamcart-token="<?= $block->escapeHtml($mainScriptViewModel->getPublicKey())?>"
+        src="https://cdn.streamcart.io/main.js"
+    ></script>
+<?php endif; ?>
