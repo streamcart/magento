@@ -1,14 +1,12 @@
 {
-    "name": "castleit/streamcart",
+    "name": "castleit/module-streamcart",
+    "license": "MIT",
     "version": "0.1.0",
-    "description": "N/A",
     "type": "magento2-module",
+    "description": "This module allow an admin user to connect Streamcart to the store",
     "require": {
         "magento/framework": "*"
     },
-    "license": [
-        "Proprietary"
-    ],
     "autoload": {
         "files": [
             "registration.php"

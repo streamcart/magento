@@ -16,6 +16,7 @@
                 </field>
                 <field id="public_key" type="text" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Public Key</label>
+                    <comment><![CDATA[Crie sua conta em <a target="_blank" href="https://app.streamcart.io">app.streamcart.io</a> para gerar sua chave de integração]]></comment>
                     <depends>
                         <field id="active">1</field>
                     </depends>
