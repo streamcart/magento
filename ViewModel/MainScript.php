@@ -1,8 +1,8 @@
 <?php
 
-namespace CastleIt\Streamcart\ViewModel;
+namespace Streamcart\Magento2\ViewModel;
 
-use CastleIt\Streamcart\Model\Config\Config;
+use Streamcart\Magento2\Model\Config\Config;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
 
 class MainScript implements ArgumentInterface

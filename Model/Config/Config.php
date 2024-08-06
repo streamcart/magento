@@ -1,13 +1,13 @@
 <?php
 
-namespace CastleIt\Streamcart\Model\Config;
+namespace Streamcart\Magento2\Model\Config;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 
 class Config
 {
-    public const XML_PATH_MAIN_SCRIPT_ACTIVE = 'castleit_streamcart/main_script/active';
-    public const XML_PATH_MAIN_SCRIPT_PUBLIC_KEY = 'castleit_streamcart/main_script/public_key';
+    public const XML_PATH_MAIN_SCRIPT_ACTIVE = 'streamcart/main_script/active';
+    public const XML_PATH_MAIN_SCRIPT_PUBLIC_KEY = 'streamcart/main_script/public_key';
 
     private ScopeConfigInterface $scopeConfig;
 

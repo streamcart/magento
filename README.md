@@ -12,7 +12,7 @@ This module allow an admin user to connect [Streamcart](https://app.streamcart.i
 This module can be installed via composer:
 
 ```shell
-composer require streamcart/module-streamcart
+composer require streamcart/module-magento2
 ```
 
 After the installation, run:
