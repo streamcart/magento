@@ -1,6 +1,6 @@
 # Streamcart Magento 2 module
 
-This module allow an admin user to connect Streamcart to the store
+This module allow an admin user to connect [Streamcart](https://app.streamcart.io/) to the store.
 
 ## Prerequisites
 
